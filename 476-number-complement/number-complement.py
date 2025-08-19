@@ -1,0 +1,14 @@
+class Solution:
+    def findComplement(self, num: int) -> int:
+        cplment = 0
+        i = 0
+
+        while num:
+            if num&1==0:
+                cplment += 1<<i
+
+            i+=1
+            num>>=1
+        
+        return cplment
+
