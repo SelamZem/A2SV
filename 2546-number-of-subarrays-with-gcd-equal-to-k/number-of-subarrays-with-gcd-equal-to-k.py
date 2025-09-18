@@ -13,7 +13,7 @@ class Solution:
             if x == k:
                 res += 1
 
-        ptr, i = 0, 0
+        i = 0
         while i < n:
             g = nums[i]
             j = i + 1
