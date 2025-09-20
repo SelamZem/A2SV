@@ -24,6 +24,8 @@ class Solution:
 
         for length in range(1, 10**8):  
             s = str(length)
+            # reverse the string except the last character
+            
             palindrome = int(s + s[-2::-1])
             if palindrome >= n and is_prime(palindrome):
                 return palindrome
